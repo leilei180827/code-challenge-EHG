@@ -16,7 +16,7 @@ export default function ImageContainer(props) {
       .then(({ data }) => {
         setImageSource(data.imageSource);
         setNeedReload(false);
-        props.imageType === 'gradual-rgb' ?
+        props.imageType.includes('gradual-rgb')  ?
           setTimeout(() => {
             setIsLoading(false);
           }, 1000) : setIsLoading(false);
