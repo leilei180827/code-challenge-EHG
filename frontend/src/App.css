@@ -1,0 +1,5 @@
+@import "~antd/dist/antd.css";
+:root {
+  --color-loading-border: #444;
+  --color-image-border: #034c6a;
+}
